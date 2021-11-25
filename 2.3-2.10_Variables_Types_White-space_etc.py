@@ -27,6 +27,12 @@ last = "lennon"
 full = "Mr. " + first + " " + last + " was an awesome singer!"
 print(full)
 
+#Can only concatenate string variables
+item1 = 9
+item2  = 10
+item3 = str(item1) + str(item2)
+print(item3)
+
 #first_name = input("First name: ")
 #last_name = input("Last name: ")
 #print(f"........{first_name.lstrip()}........")
@@ -34,3 +40,4 @@ print(full)
 famous_person = input("Name of famous person who said something worth repeating (or worth forgetting): ")
 quote = input("What exactly did they say? ")
 print(f"A famous person named {famous_person.title()} once said: \"{quote}.\"")
+
