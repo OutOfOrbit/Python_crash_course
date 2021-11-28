@@ -1,3 +1,4 @@
+#Exercise 4.1
 pizzas = ['cheese','pepperoni','all-dressed','anchovy']
 this_piz = ''
 for piz in pizzas:
