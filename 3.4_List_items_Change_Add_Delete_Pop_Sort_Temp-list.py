@@ -1,4 +1,4 @@
-# Create empty list and instert 1 item
+
 guests = []
 guests.insert(0,'cam')
 print(guests)
@@ -48,22 +48,42 @@ print(f'Here\'s the full list with newly appended guests:\n{guests}')
 
 # Creating a longer list and exploring SORT options
 locations = []
-locations.insert('oahu')
-locations.insert('paris')
-locations.insert('rome')
-locations.insert('munich')
-locations.insert('venice')
-locations.insert('bern')
-locations.insert('vienna')
-locations.insert('london')
-locations.insert('boston')
-locations.insert('los angeles')
-locations.insert('new york')
-locations.insert('vancouver')
-locations.insert('philadelphia')
-locations.insert('toronto')
-locations.insert('miami')
-locations.insert('florence')
-locations.insert('lugano')
-locations.insert('zurich')
+locations.insert(0,'oahu')
+locations.insert(0,'paris')
+locations.append('rome')
+locations.append('munich')
+locations.append('venice')
+locations.append('bern')
+locations.append('vienna')
+locations.append('london')
+locations.append('boston')
+locations.append('los angeles')
+locations.append('new york')
+locations.append('vancouver')
+locations.append('philadelphia')
+locations.append('toronto')
+locations.append('miami')
+locations.append('florence')
+locations.append('lugano')
+locations.append('zurich')
+print(locations)
 
+# Sort list in alphabetical order without modifying the actual list
+print(sorted(locations))
+
+# Sort list in alphabetical order without modifying the actual list
+print(sorted(locations,reverse=True))
+
+# Re-print the list to see show that the "sorted()" function only sorted the list TEMPORARILY
+print(locations)
+
+# Use the ".reverse()" method to reverse the order of the list (nothing alphabetical going on, just reversing whatever order the list is in)
+locations.reverse()
+print(locations)
+
+# Reverse it again to get back to the original order
+locations.reverse()
+print(locations)
+
+# Use the "len()" function to get the length of the "locations" list
+print(len(locations))
