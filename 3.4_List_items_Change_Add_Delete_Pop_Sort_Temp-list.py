@@ -1,4 +1,4 @@
-# Create empty list and instert 1 item
+
 guests = []
 guests.insert(0,'cam')
 print(guests)
@@ -73,3 +73,17 @@ print(sorted(locations))
 
 # Sort list in alphabetical order without modifying the actual list
 print(sorted(locations,reverse=True))
+
+# Re-print the list to see show that the "sorted()" function only sorted the list TEMPORARILY
+print(locations)
+
+# Use the ".reverse()" method to reverse the order of the list (nothing alphabetical going on, just reversing whatever order the list is in)
+locations.reverse()
+print(locations)
+
+# Reverse it again to get back to the original order
+locations.reverse()
+print(locations)
+
+# Use the "len()" function to get the length of the "locations" list
+print(len(locations))
